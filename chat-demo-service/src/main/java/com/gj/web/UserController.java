@@ -27,6 +27,12 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	@RequestMapping(value="/ping", method=RequestMethod.GET)
+	public ResponseEntity<String> ping(){
+    	logger.debug("Returning from the ping from container :" +System.getenv("HOSTNAME") + "::" +System.getProperty("HOSTNAME"));
+		return new ResponseEntity<String>("<H1>Service is running at "+System.getenv("HOSTNAME") + "::" +System.getProperty("HOSTNAME")+"</H1>", HttpStatus.OK);
+	}
+	
 	@RequestMapping(value="/user", method=RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUser(){
     	logger.debug("Returning all the User");

@@ -11,14 +11,14 @@ public class PayloadValidatorTest {
 
 	@Test
 	public void validatePayLoad() {
-		User toDo = new User(1, "Sample User 1", true);
-		assertEquals(false, PayloadValidator.validateCreatePayload(toDo));
+		User user = new User(1,"fname", "lname", "address", "userid", "mobileNumber", "email@email.com");
+		assertEquals(false, PayloadValidator.validateCreatePayload(user));
 	}
 	
 	@Test
 	public void validateInvalidPayLoad() {
-		User toDo = new User(0, "Sample User 1", true);
-		assertEquals(true, PayloadValidator.validateCreatePayload(toDo));
+		User user =new User("fname", "lname", "address", "userid", "mobileNumber", "email@email.com");
+		assertEquals(true, PayloadValidator.validateCreatePayload(user));
 	}
 	
 	

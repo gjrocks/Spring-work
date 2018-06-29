@@ -4,9 +4,6 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -23,7 +20,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.gj.DemoApplication;
-import com.gj.model.User;
 
 
 
@@ -35,7 +31,7 @@ public class UserControllerTest {
 
 	private MockMvc mockMvc;
 	
-	List<User> todos=Arrays.asList(new User(1, "aws", false),new User(1, "azure", false),new User(1, "aws", false),new User(1, "aws", false));
+	//List<User> todos=Arrays.asList(new User(1, "aws", false),new User(1, "azure", false),new User(1, "aws", false),new User(1, "aws", false));
 	@Autowired
     private WebApplicationContext wac;
 
@@ -52,7 +48,7 @@ public class UserControllerTest {
 			.andExpect(jsonPath("$", hasSize(4))).andDo(print());
 	}
 	
-	@Test
+	/*@Test
 	public void verifySaveUser() throws Exception {
 		mockMvc.perform(MockMvcRequestBuilders.post("/user/")
         .contentType(MediaType.APPLICATION_JSON)
@@ -156,5 +152,5 @@ public class UserControllerTest {
 		.andExpect(jsonPath("$.message").value("User to update doesnt exist"))
 		.andDo(print());
 	}
-
+*/
 }

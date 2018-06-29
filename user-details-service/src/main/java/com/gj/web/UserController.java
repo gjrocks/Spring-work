@@ -48,7 +48,7 @@ public class UserController {
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 	public ResponseEntity<User> getUserById(@PathVariable("id") long id) throws UserException{
     	logger.debug("User id to return " + id);
-    	User toDo = userService.getUserById(id);
+    	User toDo = userService.getUserById(id);  
     	if (toDo == null || toDo.getId() <= 0){
             throw new UserException("User doesnt exist");
     	}

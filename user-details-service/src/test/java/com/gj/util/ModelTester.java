@@ -1,11 +1,8 @@
 package com.gj.util;
 
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;  
 
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +32,7 @@ public class ModelTester {
 	@Before
 	public void setup(){
 		MockitoAnnotations.initMocks(this);
-		BDDMockito.given(repos.findOne(1L)).willReturn(new User(1,"we",false));
+		BDDMockito.given(repos.findOne(1L)).willReturn(new User(1,"fname", "lname", "address", "userid", "mobileNumber", "email@email.com"));
 		//this wont work please see the link https://stackoverflow.com/questions/3762047/throw-checked-exceptions-from-mocks-with-mockito
 		//in simple words, findOne method does not trow todoException, so u have to throw runtimeException
 		//BDDMockito.given(repos.findOne(2L)).willThrow(new UserException("Problem in getting TODO"));
@@ -62,7 +59,7 @@ public class ModelTester {
 		
 	//	Mockito.when(repos.findOne(1L)).thenReturn(new User(1,"test",false));
 		User temp=service.getUserById(1L);            
-		assertFalse(temp.isCompleted());
+		assertEquals("fname",temp.getFname());
 		Mockito.verify(repos,Mockito.atLeastOnce()).findOne(Mockito.anyLong());
 		//use this in case you 
 		Throwable t=catchThrowable((()->service.getUserById(2L)));

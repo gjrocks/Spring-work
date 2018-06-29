@@ -28,10 +28,10 @@ public class DemoApplication {
 	public CommandLineRunner setup(UserRepository toDoRepository) {
 		return (args) -> {
 			if(StringUtils.hasText(profile) && profile.equals("test")) {
-			toDoRepository.save(new User("Remove unused imports", true));
-			toDoRepository.save(new User("Clean the code", true));
-			toDoRepository.save(new User("Build the artifacts", false));
-			toDoRepository.save(new User("Deploy the jar file", true));
+			toDoRepository.save(new User("fname", "lname", "address", "userid", "mobileNumber", "email@email.com"));
+			toDoRepository.save(new User("ganesh", "jadhav", "ganesh address", "ganesh-1", "999", "ganesh@ganesh.com"));
+			toDoRepository.save(new User("sidh", "nirwane", "sidh address", "sidh-1", "998", "sidh@sidh.com"));
+			toDoRepository.save(new User("aarvi", "jadhav", "aarvi address", "aarvi-1", "997", "aarvi@aarvi.com"));
 			logger.info("The sample data has been generated");
 			}
 		};

@@ -25,6 +25,11 @@ public class WelcomeController {
 	@NotNull
 	private String gatewayUrl;
 	
+	@Value("${server.contextPath:/}")
+	@NotNull
+	private String contextPathUrl;
+	
+	
 	@Autowired
 	private RestTemplate client;
 	// inject via application.properties
@@ -45,6 +50,7 @@ public class WelcomeController {
     	System.out.println("ffff :" +location);
 		model.put("message", this.message);*/
 		mav.setViewName("index");
+		mav.addObject("context-path", contextPathUrl);
 		//ModelAndView mav = new ModelAndView("index");
 		mav.addObject("data", "''");
 		

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Gateway</title>
-
+ganesh : ${pageContext.request.contextPath}
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
    
 
-    <link href="/css/gj.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/gj.css" rel="stylesheet">
      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
@@ -20,9 +20,9 @@
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
      
@@ -88,7 +88,7 @@
     } */
        // alert(chatMessage.text);
         var request = $.ajax({
-            url: '/getuser',
+            url: 'getuser',
             type: 'POST',
            // data: JSON.stringify(client),
             contentType: "application/json; charset=utf-8",

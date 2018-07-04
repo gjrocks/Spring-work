@@ -1,5 +1,8 @@
 package com.mkyong;
 
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,11 +11,13 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -32,6 +37,8 @@ public class WelcomeController {
 	
 	@Autowired
 	private RestTemplate client;
+	
+	private String whereAbouts=getWhereAbouts();
 	// inject via application.properties
 	/*@Value("${welcome.message:test}")
 	private String message = "Hello World";
@@ -56,6 +63,13 @@ public class WelcomeController {
 		
 		return mav;
 	}
+
+	
+	@RequestMapping(value="/ping", method=RequestMethod.GET)
+	public ResponseEntity<String> ping(){
+    	System.out.println("Returning from the ping from container :" +System.getenv("HOSTNAME") + "::" +System.getProperty("HOSTNAME"));
+		return new ResponseEntity<String>("<H1>Service is running at <br>"+getWhereAbouts()+"</H1>", HttpStatus.OK);
+	}
 	 @PostMapping("/getuser") // //new annotation since 4.3
 	public @ResponseBody String getUserDetails(HttpServletRequest request, Model model) {
 		 String data=null;
@@ -74,7 +88,38 @@ public class WelcomeController {
 		return data;
 	}
 
-	
+	 private static String getWhereAbouts() {
+		    StringBuilder whereAbouts=new StringBuilder();
+		    	if(System.getenv("HOSTNAME") !=null) {
+		    		whereAbouts.append("Docker Container id : ");
+		    		whereAbouts.append(System.getenv("HOSTNAME"));
+		    	}
+		    	whereAbouts.append("-------------------------------------<br> ");
+		    		whereAbouts.append("Instance ip  : ");
+		    		try {
+		    		 Enumeration<NetworkInterface> n = NetworkInterface.getNetworkInterfaces();
+		            while (n.hasMoreElements())
+		             {
+		                     NetworkInterface e = n.nextElement();
+		                   //  System.out.println("Interface: " + e.getName());
+		                     Enumeration<InetAddress> a = e.getInetAddresses();
+		                     for (; a.hasMoreElements();)
+		                     {
+		                             InetAddress addr = a.nextElement();
+		                             whereAbouts.append( addr.getHostAddress());
+		                             whereAbouts.append("<br>");
+		                     }
+		             }
+		    		}catch(Exception e) {
+		    			e.printStackTrace();
+		    		}
+		    		
+		    		
+		    		
+		    	
+		    		
+		    	return whereAbouts.toString();
+		    }
 }
 
 

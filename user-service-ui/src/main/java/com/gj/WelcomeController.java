@@ -54,26 +54,15 @@ public class WelcomeController {
 	}
 	
 	private String whereAbouts=getWhereAbouts();
-	// inject via application.properties
-	/*@Value("${welcome.message:test}")
-	private String message = "Hello World";
 
-	@Value("${randomFlag:true}")
-    private String randomFlag;
-	@Value("${system.config.dir:true}")
-	private String location;
-	*/
-	
 	public static Map<String,String> userValues=new HashMap<String,String>();
 	
 	@RequestMapping("/")
 	public ModelAndView welcome(ModelAndView mav) {
-	/*	System.out.println("Ganesh  :" +randomFlag);
-    	System.out.println("ffff :" +location);
-		model.put("message", this.message);*/
+	
 		mav.setViewName("index");
 		mav.addObject("context-path", contextPathUrl);
-		//ModelAndView mav = new ModelAndView("index");
+		
 		mav.addObject("data", "''");
 		
 		return mav;
@@ -141,25 +130,3 @@ public class WelcomeController {
 }
 
 
-/*@Controller
-@PropertySource(value="${system.config.dir}/basicws.properties",ignoreResourceNotFound = false)
-public class WelcomeController {
-
-	// inject via application.properties
-	@Value("${welcome.message:test}")
-	private String message = "Hello World";
-
-	@Value("${randomFlag:true}")
-    private String randomFlag;
-	@Value("${system.config.dir:true}")
-	private String location;
-	
-	@RequestMapping("/")
-	public String welcome(Map<String, Object> model) {
-		System.out.println("Ganesh  :" +randomFlag);
-    	System.out.println("ffff :" +location);
-		model.put("message", this.message);
-		return "welcome";
-	}
-
-}*/

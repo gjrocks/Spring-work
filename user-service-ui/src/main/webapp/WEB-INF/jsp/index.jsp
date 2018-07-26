@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Gateway</title>
-ganesh : ${pageContext.request.contextPath}
+    <title>User-service-ui</title>
+
     <!-- Bootstrap -->
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
    
@@ -143,10 +143,10 @@ ganesh : ${pageContext.request.contextPath}
   <div class="col-md-4" id="col2"><!-- Standard button -->
 
 <form method="POST" action="/getuser">
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label for="UserId">User id</label>
     <input type="text" class="form-control" id="userId" name="userId" placeholder="User id..">
-  </div>
+  </div> -->
 <!-- 
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -209,7 +209,7 @@ ganesh : ${pageContext.request.contextPath}
     <input type="file" id="exampleInputFile" name="file">
    
   </div> -->
-<button type="button" class="btn btn-prim" id="getallusers">Get User</button></div>
+<button type="button" class="btn btn-prim" id="getallusers">Get All Users from user-service</button></div>
   </form>  
 </div>
 

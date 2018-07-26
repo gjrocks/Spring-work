@@ -36,15 +36,18 @@ public class WelcomeController {
 	@NotNull
 	private String contextPathUrl;
 	
+	private String whereAbouts=getWhereAbouts();
+
+	public static Map<String,String> userValues=new HashMap<String,String>();
+	
+	
 	@Value("${userservice.service.name:user-service}")
 	@NotNull
 	private String userServiceName;
 	
-	
 	@Autowired
 	private RestTemplate client;
 	
-
 	@Autowired
 	private DiscoveryClient discoveryClient;
 
@@ -53,27 +56,6 @@ public class WelcomeController {
 		return discoveryClient.getInstances(serviceName).stream().map(si -> si.getUri()).findFirst();
 	}
 	
-	private String whereAbouts=getWhereAbouts();
-
-	public static Map<String,String> userValues=new HashMap<String,String>();
-	
-	@RequestMapping("/")
-	public ModelAndView welcome(ModelAndView mav) {
-	
-		mav.setViewName("index");
-		mav.addObject("context-path", contextPathUrl);
-		
-		mav.addObject("data", "''");
-		
-		return mav;
-	}
-
-	
-	@RequestMapping(value="/ping", method=RequestMethod.GET)
-	public ResponseEntity<String> ping(){
-    	System.out.println("Returning from the ping from container :" +System.getenv("HOSTNAME") + "::" +System.getProperty("HOSTNAME"));
-		return new ResponseEntity<String>("<H1>Service is running at <br>"+getWhereAbouts()+"</H1>", HttpStatus.OK);
-	}
 	 @PostMapping("/getuser") // //new annotation since 4.3
 	public @ResponseBody String getUserDetails(HttpServletRequest request, Model model) {
 		 String data=null;
@@ -93,6 +75,23 @@ public class WelcomeController {
 		return data;
 	}
 
+	 @RequestMapping("/")
+		public ModelAndView welcome(ModelAndView mav) {
+		
+			mav.setViewName("index");
+			mav.addObject("context-path", contextPathUrl);
+			
+			mav.addObject("data", "''");
+			
+			return mav;
+		}
+	 
+	 @RequestMapping(value="/ping", method=RequestMethod.GET)
+		public ResponseEntity<String> ping(){
+	    	System.out.println("Returning from the ping from container :" +System.getenv("HOSTNAME") + "::" +System.getProperty("HOSTNAME"));
+			return new ResponseEntity<String>("<H1>Service is running at <br>"+getWhereAbouts()+"</H1>", HttpStatus.OK);
+		}
+	 
 	 private static String getWhereAbouts() {
 		    StringBuilder whereAbouts=new StringBuilder();
 		    	if(System.getenv("HOSTNAME") !=null) {
@@ -118,12 +117,7 @@ public class WelcomeController {
 		    		}catch(Exception e) {
 		    			e.printStackTrace();
 		    		}
-		    		
-		    		
-		    		
-		    	
-		    		
-		    	return whereAbouts.toString();
+	    	return whereAbouts.toString();
 		    }
 	 
 	 

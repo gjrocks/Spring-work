@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+       http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+       http://www.springframework.org/schema/security 
+       http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+
+  
+
+	<http auto-config='true' entry-point-ref="customEntryPoint">
+	      <intercept-url pattern="/home**" access="permitAll" />
+	      <intercept-url pattern="/custlogin**" access="permitAll" />
+	       <intercept-url pattern="/login**" access="permitAll" />
+		<intercept-url pattern="/person/**" access="hasRole('ROLE_ORG')" />
+		
+		<form-login login-page="/custlogin.jsp"/>
+		<!-- <form-login/> -->
+		<!-- the following will take care of back button too, this works with post only, so logout request should be post -->
+		 <logout logout-url="/performlogout" delete-cookies="JSESSIONID" invalidate-session="true"
+		 success-handler-ref="customLogoutHandler"/>
+		 
+		 <csrf disabled="false"/>
+	</http>
+
+<!-- this is another way to configure the user service
+<authentication-manager>
+        <authentication-provider>
+            <password-encoder ref="encoder" />
+            
+            <jdbc-user-service data-source-ref="dataSource"
+                users-by-username-query="select username,password, enabled from users where username=?"
+                authorities-by-username-query="select username, role from user_roles where username =?  " />
+        </authentication-provider>
+    </authentication-manager>
+
+    <beans:bean id="encoder"
+        class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <beans:constructor-arg name="strength" value="10" />
+    </beans:bean> -->
+    
+    
+    <!-- <authentication-manager>
+        <authentication-provider user-service-ref="customUserDetailsService">
+            <password-encoder ref="passwordEncoder"/>
+        </authentication-provider>
+        
+    </authentication-manager>  this works -->
+    
+	<authentication-manager>
+		<authentication-provider ref="daoAuthenticationProvider">
+			<!-- <password-encoder ref="passwordEncoder"/> -->
+			<!-- <user-service id="customUserDetailsService"/>  does not work-->
+			<!-- <jdbc-user-service data-source-ref="dataSource" />  this work-->
+		</authentication-provider>
+		
+	</authentication-manager>
+
+
+
+	<beans:bean id="daoAuthenticationProvider"
+		class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+		<beans:property name="userDetailsService" ref="customUserDetailsService" />
+		<beans:property name="passwordEncoder" ref="passwordEncoder"/>
+	</beans:bean>
+	
+	       
+	<beans:bean id="passwordEncoder"
+        class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <beans:constructor-arg name="strength" value="10" />
+    </beans:bean>
+    
+    
+        <beans:bean id="customLogoutHandler"
+        class="com.gj.spring.security.CustomLogoutHandler">
+        
+        
+        
+    </beans:bean>
+    
+    
+    <beans:bean id="customEntryPoint"
+        class="com.gj.spring.security.CustomEntryPoint">
+        <beans:constructor-arg value="/custlogin.jsp"></beans:constructor-arg>
+        </beans:bean>
+</beans:beans>

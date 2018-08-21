@@ -1,0 +1,1 @@
+<span id="footer">Ebulk by GJ</span>

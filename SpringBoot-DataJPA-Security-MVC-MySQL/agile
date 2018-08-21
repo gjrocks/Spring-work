@@ -1,0 +1,7 @@
+9may
+i) changed index.jsp to correct it
+ii) added custom success logout handler
+iii) custom login logout added, csrf added
+
+
+it is been hit by bug in chrome, CSRF issue, it works in IE and firefox, but fails in chrome.302 redirect does not set cookie of jsessionid

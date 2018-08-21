@@ -1,0 +1,11 @@
+package com.gj.spring;
+
+import org.springframework.boot.SpringApplication;
+
+//@SpringBootApplication
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+}

@@ -19,7 +19,7 @@
        http://www.springframework.org/schema/security 
        http://www.springframework.org/schema/security/spring-security-4.1.xsd"> 
        
-       
+       <mvc:resources mapping="/**" location="/" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="ganesh">

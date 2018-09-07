@@ -1,26 +1,29 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>User</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gateway</title>
 
-<!-- Bootstrap -->
-<link href="${pageContext.request.contextPath}/css/bootstrap.min.css"
-	rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+   
 
+    <link href="${pageContext.request.contextPath}/css/gj.css" rel="stylesheet">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
-<link href="${pageContext.request.contextPath}/css/gj.css"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet"
-	href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-
-</head>
-<body>
+<style>
+  .error {
+      color: #EF1313;
+      font-style: italic;
+  }
+</style>
+  </head>
+  <body>
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -29,10 +32,17 @@
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+     
      
     <script>
    
     $( function() {
+    	$('#dob').datepicker({
+            format: "dd/mm/yyyy"
+        });  
+    	
     //  $( "#dob" ).datepicker();
   $('#getallusers').on('click', function(event) {
            
@@ -127,13 +137,8 @@
  <nav>
   <ul>
     
-   <!--  <li><a href="#home">Home</a></li>
-    <li><a href="#register">Register</a></li>
-    <li><a href="#messages">Messages</a></li>
-    <li><a href="#contact">Contact-Us</a></li> -->
-    
-    <li><a href="#home">Home</a></li>
-    <li><a href="person/allPersons">Users</a></li>
+     <li><a href="#home">Home</a></li>
+    <li><a href="${pageContext.request.contextPath}/user/allUsers">Users</a></li>
     <li><a href="user/addUser">Register-User</a></li>
     <li><a href="#contact">Contact-Us</a></li>
 
@@ -144,19 +149,60 @@
   <!--  <div class="col-md-3" id="col3">.col-mid-3</div> -->
 </div>
 <hr>
- <label for="d">The get user button click will bring the user details from user details service.</label>
+ <label for="d">Add User</label>
 <hr>
 
 <div class="row" id="row2">
   <div class="col-md-2" id="col1"></div>
   <div class="col-md-4" id="col2"><!-- Standard button -->
 
-<form method="POST" action="/getuser">
+<form method="POST" action="saveUser">
   <div class="form-group">
-    <label for="UserId">User id</label>
-    <input type="text" class="form-control" id="userId" name="userId" placeholder="User id..">
+    <label for="uname">User id</label>
+    <input type="text" class="form-control" id="uname" name="uname" placeholder="User name..">
   </div>
+  <div class="form-group">
+    <label for="uname">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="password..">
+  </div>
+  
+ <div class="form-group">
+    <label for="uname">Re-type Password</label>
+    <input type="password" class="form-control" id="password1" name="password1" placeholder="re-type password..">
+  </div>
+  
+   <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email..">
+  </div>
+  
+  <div class="form-group">
+    <label for="dob">Date of birth</label>
+    <input type="text" class="form-control" name="dob" id="dob" placeholder="Date of birth..">
+   
+</div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="ROLE_ADMIN" checked>
+    Admin User
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="ROLE_USER">
+    Normal User
+  </label>
+</div>
+
+<input type="hidden"
+    name="${_csrf.parameterName}"
+    value="${_csrf.token}"/>
 <!-- 
+String uname;
+	String password;
+	String email;
+	Date dob;
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="Email..">
@@ -218,13 +264,13 @@
     <input type="file" id="exampleInputFile" name="file">
    
   </div> -->
-<button type="button" class="btn btn-prim" id="getallusers">Get User</button></div>
+<button type="submit" class="btn btn-prim" id="addusers">Add User</button>
   </form>  
 </div>
 
-<hr>
 
-<table id="example" class="display" width="100%"></table>
+
+
 
 </div>
   </body>

@@ -1,17 +1,34 @@
 package com.gj.spring.model;
 
 import java.util.Arrays;
+import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="customuser")
 public class CustomUser {
 
+	@Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
 	private long id;
 	
+	@Column(nullable = false, unique = true)
 	private String username;
 
 	private String password;
 	
 	private boolean enabled;
 	
+	private Date dateCreated;
+	private Date dateUpdated;
+	
+	private String email;
+	private Date dob;
 	
 	private CustomAuthories[] authorities;
 	
@@ -99,6 +116,38 @@ public class CustomUser {
 	public String toString() {
 		return "CustomUser [id=" + id + ", username=" + username + ", password=" + password + ", enabled=" + enabled
 				+ ", authorities=" + Arrays.toString(authorities) + ", authority=" + authority + "]";
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+
+	public void setDateCreated(Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+
+	public Date getDateUpdated() {
+		return dateUpdated;
+	}
+
+	public void setDateUpdated(Date dateUpdated) {
+		this.dateUpdated = dateUpdated;
 	}
 	
 	

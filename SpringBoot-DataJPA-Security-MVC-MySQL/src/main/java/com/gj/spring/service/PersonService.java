@@ -2,7 +2,6 @@ package com.gj.spring.service;
 
 import java.util.List;
 
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +13,7 @@ import com.gj.spring.model.PersonRepository;
 public class PersonService implements IPersonService {
 
 	
-	@Autowired
-	private SessionFactory sessionFactory;
+
 	
 	@Autowired
 	private PersonRepository personRepository;
@@ -24,7 +22,7 @@ public class PersonService implements IPersonService {
 	public Person persistPerson(Person p) {
 	System.out.println("Persisting person");
 	personRepository.save(p);
-		//sessionFactory.getCurrentSession().save(p);
+		
 		return p;
 	}
 

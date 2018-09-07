@@ -123,8 +123,8 @@
   <ul>
     
     <li><a href="#home">Home</a></li>
-    <li><a href="${pageContext.request.contextPath}/person/allPersons">Users</a></li>
-    <li><a href="${pageContext.request.contextPath}/user/addUser">Register-User</a></li>
+    <li><a href="person/allPersons">Users</a></li>
+    <li><a href="#user/addUser">Register-User</a></li>
     <li><a href="#contact">Contact-Us</a></li>
 
   </ul>

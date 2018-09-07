@@ -6,7 +6,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class Person {
+public class Person {  
 
 	@Id @GeneratedValue
 	private long id;

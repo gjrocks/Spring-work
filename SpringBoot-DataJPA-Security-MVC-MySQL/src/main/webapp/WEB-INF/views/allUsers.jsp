@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -30,23 +32,9 @@
    
     $( function() {
     	
-    	  $('#login-form-link').click(function(e) {
-    			$("#login-form").delay(100).fadeIn(100);
-    	 		$("#register-form").fadeOut(100);
-    			$('#register-form-link').removeClass('active');
-    			$(this).addClass('active');
-    			e.preventDefault();
-    		});
-    		$('#register-form-link').click(function(e) {
-    			$("#register-form").delay(100).fadeIn(100);
-    	 		$("#login-form").fadeOut(100);
-    			$('#login-form-link').removeClass('active');
-    			$(this).addClass('active');
-    			e.preventDefault();
-    		});
+    	$('#example').DataTable();
     	
     	
-    //  $( "#dob" ).datepicker();
   $('#getallusers').on('click', function(event) {
            
 	  getUsers();
@@ -123,7 +111,7 @@
   <ul>
     
     <li><a href="#home">Home</a></li>
-    <li><a href="${pageContext.request.contextPath}/person/allPersons">Users</a></li>
+    <li><a href="${pageContext.request.contextPath}/user/allUsers">Users</a></li>
     <li><a href="${pageContext.request.contextPath}/user/addUser">Register-User</a></li>
     <li><a href="#contact">Contact-Us</a></li>
 
@@ -134,6 +122,43 @@
   <!--  <div class="col-md-3" id="col3">.col-mid-3</div> -->
 </div>
 <hr></div>
-Welcome page
+All Users 
+<hr></hr>
+
+
+<div class="container">
+    	<div class="row">
+			<div class="col-md-10">
+<!-- <table id="example" class="display"></table> -->
+
+<table id="example" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                 <th>Date of Birth</th> 
+                <th>User creation date</th>
+                <th>Enabled</th>
+            </tr>
+        </thead>
+        <tbody>
+      
+   
+        <c:forEach var="user" items="${users}">	 
+            <tr>
+                <td>${user.username} <a href="${pageContext.request.contextPath}/user/addUser?usern=${user.username}">[edit]</a> </td>
+                <td>${user.email}</td>
+                <td>${user.dob}</td>
+                <td>${user.dateCreated}</td>
+                <td>${user.enabled}</td>
+                <%-- <td>${person.userid}</td> --%>
+              
+            </tr>
+            </c:forEach>
+            </tbody>
+            </table>
+</div>
+</div>
+</div>
   </body>
 </html>

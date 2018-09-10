@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"          	prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,6 +43,11 @@
     	$('#dob').datepicker({
             format: "dd/mm/yyyy"
         });  
+    	
+    	var editMode=${editMode};
+    	if(editMode){
+    		$('#uname').prop("readonly",true);
+    	}
     	
     //  $( "#dob" ).datepicker();
   $('#getallusers').on('click', function(event) {
@@ -156,7 +162,7 @@
   <div class="col-md-2" id="col1"></div>
   <div class="col-md-4" id="col2"><!-- Standard button -->
 
-<form method="POST" action="saveUser">
+<%-- <form method="POST" action="saveUser">
   <div class="form-group">
     <label for="uname">User id</label>
     <input type="text" class="form-control" id="uname" name="uname" placeholder="User name..">
@@ -198,6 +204,63 @@
 <input type="hidden"
     name="${_csrf.parameterName}"
     value="${_csrf.token}"/>
+    
+    <button type="submit" class="btn btn-prim" id="addusers">Add User</button>
+  </form>   --%>
+ <%--  <form:form action="login.html" commandName="userDetails"></form:form> --%>
+  <form:form method="POST" action="saveUser" modelAttribute="userDetails">
+  <%-- <form:errors path="*" cssClass="error" element="div" /> --%>
+  <div class="form-group">
+    <label for="uname">User id</label>
+    <form:input type="text" class="form-control" id="uname" name="uname" path="uname" placeholder="User name.."/>
+    <form:errors path="uname" cssClass="error"></form:errors>
+  </div>
+  <div class="form-group">
+    <label for="uname">Password</label>
+    <form:input type="password" class="form-control" id="password" name="password" path="password" placeholder="password.."/>
+   <form:errors path="password" cssClass="error"></form:errors>
+  </div>
+  
+ <div class="form-group">
+    <label for="uname">Re-type Password</label>
+    <form:input type="password" class="form-control" id="password1" name="password1" path="password1" placeholder="re-type password.."/>
+   <form:errors path="password1" cssClass="error"></form:errors>
+  </div>
+  
+   <div class="form-group">
+    <label for="email">Email address</label>
+    <form:input type="email" class="form-control" id="email" name="email" path="email"  placeholder="Email.."/>
+  <form:errors path="email" cssClass="error"></form:errors>
+  </div>
+  
+  <div class="form-group">
+    <label for="dob">Date of birth</label>
+    <form:input type="text" class="form-control" name="dob" id="dob" path="dob" placeholder="Date of birth.."/>
+    <form:errors path="dob" cssClass="error"></form:errors>
+</div>
+
+<div class="radio">
+  <label>
+    <form:radiobutton  name="optionsRadios" id="optionsRadios1" value="ROLE_ADMIN" path="optionsRadios" checked="checked"/>
+    Admin User
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <form:radiobutton name="optionsRadios" id="optionsRadios2" path="optionsRadios" value="ROLE_USER"/>
+    Normal User
+  </label>
+</div>
+
+<%-- <input type="hidden"
+    name="${_csrf.parameterName}"
+    value="${_csrf.token}"/> --%>
+    
+    <button type="submit" class="btn btn-prim" id="addusers">Add User</button>
+  </form:form>  
+  
+  
+</div>
 <!-- 
 String uname;
 	String password;
@@ -264,9 +327,7 @@ String uname;
     <input type="file" id="exampleInputFile" name="file">
    
   </div> -->
-<button type="submit" class="btn btn-prim" id="addusers">Add User</button>
-  </form>  
-</div>
+
 
 
 

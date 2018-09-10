@@ -32,8 +32,8 @@ private UserRepository userRepository;
 	}
 
 	@Override
-	public CustomUser addUser(CustomUser user) {
-		System.out.println("here");
+	public CustomUser saveUser(CustomUser user) {
+	
 		Date dt=new Date();
 		if(user.getId()==0) {
 			
@@ -42,8 +42,9 @@ private UserRepository userRepository;
 		}else {
 			user.setDateUpdated(dt);
 		}
-			
+		//check if it does saveorupdate	
 		userRepository.save(user);
+		
 		return user;
 	}
 

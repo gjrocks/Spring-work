@@ -9,7 +9,7 @@ public interface IUserService {
 	public CustomUser getUser(String username);
 	public List<CustomUser> getAllUsers();
 	public CustomUser deleteUser(String userName);
-	public CustomUser addUser(CustomUser user);
+	public CustomUser saveUser(CustomUser user);
 	
 	
 }

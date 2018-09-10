@@ -2,11 +2,29 @@ package com.gj.spring.model;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class UserVO {
 
+	@NotEmpty(message = "Data Error :User name should not be blank.")
+    @Size(min = 3,max = 10,message="Username should have length between 6 and 10")
 	String uname;
+
+	
 	String password;
+	
+	@Email
 	String email;
+	
+	@NotNull(message ="Data Error :Please provide date of birth")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
+    @Past
 	Date dob;
 	
 	String password1;

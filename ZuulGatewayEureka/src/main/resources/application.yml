@@ -1,0 +1,40 @@
+#info:
+#  component: Zuul Server
+  
+#endpoints:
+#  restart:
+#    enabled: true
+#  shutdown:
+#    enabled: true
+#  health:
+#    sensitive: false
+
+zuul:
+  routes:
+    userui:
+      path: /users/**
+      serviceId: userui-8f915d2902eaf3a067afabd50b50771e
+      strip-prefix: false
+      service-id: userui-8f915d2902eaf3a067afabd50b50771e
+      
+ribbon:
+    restclient:
+      enabled: true
+    eager-load:
+     enabled: true
+     clients:
+      - userui      
+    eureka:
+     enabled: false
+    consul:
+     enabled: true 
+ 
+               
+
+server:
+  port: 8085
+
+
+spring:
+  application:
+    name: gatewayy

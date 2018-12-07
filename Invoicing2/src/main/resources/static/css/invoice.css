@@ -1,0 +1,156 @@
+slabel {
+	width:150px;
+}
+.slabel2 {
+	width:15px;
+}
+
+.cell {
+  padding: 10px 10px 5px 10px;
+    display: inline-block;
+    color: #505253;
+    font-weight: bold; }
+    
+    
+.data-container {
+   width: 800px;
+ 
+  box-sizing: border-box;
+  margin: auto;
+  background-color: #FFFFFF;
+  padding: 25px;
+  border: solid 1px #e8e8e8;
+  /*box-shadow: 0px 0px 15px #999999;*/ }
+  .data-container .tab-content {
+    min-height: 800px; }
+  .data-container input, .data-container select {
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px; }
+  .data-container .error {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #A42727;
+    background-color: #ffbdbd;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #A42727;
+    margin-top: 20px; }
+  .data-container label {
+    padding: 20px 0 5px 0;
+    display: inline-block;
+    color: #505253;
+    font-weight: normal; }
+  .data-container .btn-submit {
+    float: right; }
+    .data-container .btn-submit:hover {
+      cursor: pointer; }
+  .data-container .forgotten {
+    float: left;
+    height: 40px;
+    /*padding-top: 12px;*/
+    box-sizing: border-box; }
+    .data-container .forgotten a {
+      font-size: 14px;
+      color: #11a9ef;
+      text-decoration: underline; }
+      .data-container .forgotten a:hover {
+        color: #5192b0;
+        text-decoration: underline; }
+  .data-container .btn-container {
+    margin-top: 20px; }
+  .data-container .container-inner {
+    width: 270px;
+    position: relative;
+    margin-top: 25px;
+    float: left;
+    margin-right: 20px;
+    padding: 25px;
+    padding-left: 0;
+    padding-bottom: 0;
+    box-sizing: border-box; }
+    .data-container .container-inner .submit-row {
+      margin-top: 20px; }
+    .data-container .container-inner select {
+      margin-top: -9px;
+      color: #505253; }
+    .data-container .container-inner #SA-CM {
+      margin-bottom: 14px; }
+    .data-container .container-inner .left-info {
+      margin: 20px 0;
+      font-size: 14px;
+      line-height: 16px; }
+      .data-container .container-inner .left-info .icon {
+        margin-right: 10px;
+        font-size: 16px;
+        vertical-align: text-top; }
+      .data-container .container-inner .left-info .status {
+        margin-left: 5px;
+        text-transform: capitalize; }
+      .data-container .container-inner .left-info .live {
+        color: #008566; }
+      .data-container .container-inner .left-info .offline {
+        color: #d90000; }
+      .data-container .container-inner .left-info .test {
+        color: #ff5800; }
+    .data-container .container-inner .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .data-container .container-inner .footer p {
+        font-size: 10px;
+        margin: 0;
+        padding-left: 1px; }
+    .data-container .container-inner.right {
+      background-color: #f2f2f2;
+      float: right;
+      margin-right: 0;
+      padding-left: 25px;
+      padding-bottom: 25px; }
+      .data-container .container-inner.right h2 {
+        margin: 0;
+        color: #505253;
+        font-weight: normal;
+        font-size: 18px; }
+  .data-container .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 0; }
+    .data-container .input-group .input-icon {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 11px 12px;
+      font-size: 16px;
+      margin-bottom: 0;
+      line-height: 16px;
+      text-align: center;
+      border: 1px solid #ced4da;
+      border-radius: 0;
+      border-right: 0; }
+    .data-container .input-group input {
+      border: 1px solid #ced4da;
+      border-left: 0;
+      border-radius: 0; }
+      
+      
+ .text-center-align{
+ text-align: center;
+ }     
+ 
+ 
+ .dropdown {
+  margin-bottom: 15px; }
+  

@@ -40,8 +40,8 @@ CurrentInvoicesRepository currentInvoicesRepository;
 		///System.out.println(currentInvoicesRepository.getPagedInvoices("od_createdon", "desc", 1, 2));
 		//System.out.println(currentInvoicesRepository.findOne(3L));
 	}
-	
-//	@Test
+	  
+@Test
 	public void saveUserTest() {
 
 		UserDetail userDetail = new UserDetail("test","qwerty","test",true,"ADMIN",new Date());
@@ -60,11 +60,13 @@ CurrentInvoicesRepository currentInvoicesRepository;
 		//UserDetail userDetail=new UserDetail();
 		userDetail.setDob(new DateWrapper(12,12,1980).getDate());
 		userDetail.setUsername("demo11");
-		userDetail.setPassword(passwordEncoder.encode("demo11"));
+		userDetail.setPassword(passwordEncoder.encode("12345"));
 		userDetail.setAuthority("ROLE_ADMIN");
 		userDetail.setCreatedDate(new Date());
 		userDetail.setEmail("dem11o@ganesh.com");
 		userDetail.setEnabled(true);
-		userRepository.save(userDetail);
+		//userRepository.save(userDetail);
+		System.out.println(passwordEncoder.encode("12345"));
+		System.out.println(passwordEncoder.encode("12345"));
 	}
 }

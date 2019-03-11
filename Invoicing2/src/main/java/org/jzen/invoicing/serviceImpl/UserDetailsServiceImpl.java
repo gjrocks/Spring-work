@@ -22,8 +22,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	@Autowired
 	UserRepository userRepository;
 	
-	@Autowired
-	private InvoicingUtil invoicingUtil;
+	//@Autowired
+	private InvoicingUtil invoicingUtil=new InvoicingUtil();
 
 	@Override
 	public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {

@@ -34,7 +34,7 @@ public class ProxyMailSender implements IProxyMailSender {
 		
 		    private IMailQueueMonitor   mailQueueMonitor;
 		    
-		    @Autowired
+		   // @Autowired
 			private JavaMailSender mailSender;
 		    /**
 		     *

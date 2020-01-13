@@ -44,7 +44,7 @@ public class UserControllerTest {
 	@Test
 	public void verifyAllUserList() throws Exception {
 		
-		mockMvc.perform(MockMvcRequestBuilders.get("/user").accept(MediaType.APPLICATION_JSON))
+		mockMvc.perform(MockMvcRequestBuilders.get("/users").accept(MediaType.APPLICATION_JSON))
 			.andExpect(jsonPath("$", hasSize(4))).andDo(print());
 	}
 	

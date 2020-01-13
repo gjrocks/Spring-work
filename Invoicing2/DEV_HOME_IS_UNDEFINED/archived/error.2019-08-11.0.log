@@ -1,0 +1,243 @@
+2019-08-11 00:06:40 - On audit application event: timestamp: 2019-08-10T18:36:40.526Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:06:40 - On audit application event: timestamp: 2019-08-10T18:36:40.874Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:06:45 - On audit application event: timestamp: 2019-08-10T18:36:45.705Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:06:47 - On audit application event: timestamp: 2019-08-10T18:36:47.560Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:06:47 - On audit application event: timestamp: 2019-08-10T18:36:47.724Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:06:56 - authenticationure, user: demo11
+2019-08-11 00:06:56 - login success event, user: AuditEvent [timestamp=2019-08-10T18:36:56.675Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E}]
+2019-08-11 00:06:56 - On audit application event: timestamp: 2019-08-10T18:36:56.675Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A49E109D86430C38EA607C2D4DC2CE3E}
+2019-08-11 00:13:44 - On audit application event: timestamp: 2019-08-10T18:43:44.035Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 915DAD429CDFE445C637F484DF74CBCA, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 00:13:50 - authenticationure, user: demo11
+2019-08-11 00:13:50 - login success event, user: AuditEvent [timestamp=2019-08-10T18:43:50.917Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 915DAD429CDFE445C637F484DF74CBCA}]
+2019-08-11 00:13:50 - On audit application event: timestamp: 2019-08-10T18:43:50.917Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 915DAD429CDFE445C637F484DF74CBCA}
+2019-08-11 12:17:05 - On audit application event: timestamp: 2019-08-11T06:47:05.199Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:17:05 - On audit application event: timestamp: 2019-08-11T06:47:05.237Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0482B083B13384FE148E7D4B4A3872A4, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:17:13 - authenticationure, user: demo11
+2019-08-11 12:17:13 - login success event, user: AuditEvent [timestamp=2019-08-11T06:47:13.311Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0482B083B13384FE148E7D4B4A3872A4}]
+2019-08-11 12:17:13 - On audit application event: timestamp: 2019-08-11T06:47:13.311Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0482B083B13384FE148E7D4B4A3872A4}
+2019-08-11 12:36:20 - Starting MainApplication on WPUCQKTSS0LW with PID 268268 (C:\Users\cqktss0\git\Spring-work\Invoicing2\target\classes started by cqktss0 in C:\Users\cqktss0\git\Spring-work\Invoicing2)
+2019-08-11 12:36:20 - The following profiles are active: dev
+2019-08-11 12:36:22 - Starting service [Tomcat]
+2019-08-11 12:36:22 - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-08-11 12:36:22 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-08-11 12:36:22 - Initializing Spring embedded WebApplicationContext
+2019-08-11 12:36:24 - Started MainApplication in 4.04 seconds (JVM running for 47291.696)
+2019-08-11 12:38:16 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 12:38:16 - On audit application event: timestamp: 2019-08-11T07:08:16.425Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 822DD3A74BD950FF77477D1949E61546, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:38:22 - On audit application event: timestamp: 2019-08-11T07:08:22.986Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 822DD3A74BD950FF77477D1949E61546, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:38:23 - On audit application event: timestamp: 2019-08-11T07:08:23.621Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 822DD3A74BD950FF77477D1949E61546, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:38:30 - authenticationure, user: demo11
+2019-08-11 12:38:30 - login success event, user: AuditEvent [timestamp=2019-08-11T07:08:30.735Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 822DD3A74BD950FF77477D1949E61546}]
+2019-08-11 12:38:30 - On audit application event: timestamp: 2019-08-11T07:08:30.735Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 822DD3A74BD950FF77477D1949E61546}
+2019-08-11 12:49:18 - On audit application event: timestamp: 2019-08-11T07:19:18.073Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: F6BE8FA75FDBF8F36A88D3CC2DCDADCA, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:51:23 - On audit application event: timestamp: 2019-08-11T07:21:23.873Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: F6BE8FA75FDBF8F36A88D3CC2DCDADCA, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:51:24 - On audit application event: timestamp: 2019-08-11T07:21:24.350Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: F6BE8FA75FDBF8F36A88D3CC2DCDADCA, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 12:51:30 - authenticationure, user: demo11
+2019-08-11 12:51:30 - login success event, user: AuditEvent [timestamp=2019-08-11T07:21:30.630Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: F6BE8FA75FDBF8F36A88D3CC2DCDADCA}]
+2019-08-11 12:51:30 - On audit application event: timestamp: 2019-08-11T07:21:30.630Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: F6BE8FA75FDBF8F36A88D3CC2DCDADCA}
+2019-08-11 13:22:32 - On audit application event: timestamp: 2019-08-11T07:52:32.993Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1D4ACD7D75E3A2C2BC0BB7E632691D12, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 13:22:38 - On audit application event: timestamp: 2019-08-11T07:52:38.993Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1D4ACD7D75E3A2C2BC0BB7E632691D12, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 13:22:40 - On audit application event: timestamp: 2019-08-11T07:52:40.400Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1D4ACD7D75E3A2C2BC0BB7E632691D12, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 13:22:47 - authenticationure, user: demo11
+2019-08-11 13:22:47 - login success event, user: AuditEvent [timestamp=2019-08-11T07:52:47.237Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1D4ACD7D75E3A2C2BC0BB7E632691D12}]
+2019-08-11 13:22:47 - On audit application event: timestamp: 2019-08-11T07:52:47.237Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1D4ACD7D75E3A2C2BC0BB7E632691D12}
+2019-08-11 13:58:41 - On audit application event: timestamp: 2019-08-11T08:28:41.681Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 13:58:43 - On audit application event: timestamp: 2019-08-11T08:28:43.317Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1768B279E02E945464B783D72A724F3A, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 13:58:55 - authenticationure, user: demo11
+2019-08-11 13:58:55 - login success event, user: AuditEvent [timestamp=2019-08-11T08:28:55.545Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1768B279E02E945464B783D72A724F3A}]
+2019-08-11 13:58:55 - On audit application event: timestamp: 2019-08-11T08:28:55.545Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 1768B279E02E945464B783D72A724F3A}
+2019-08-11 19:36:52 - On audit application event: timestamp: 2019-08-11T14:06:52.222Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: D163720AE41DEF8222EC5DBADEA53122, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 19:36:58 - On audit application event: timestamp: 2019-08-11T14:06:58.398Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: D163720AE41DEF8222EC5DBADEA53122, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 19:36:58 - On audit application event: timestamp: 2019-08-11T14:06:58.792Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: D163720AE41DEF8222EC5DBADEA53122, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 19:37:07 - authenticationure, user: demo11
+2019-08-11 19:37:07 - login success event, user: AuditEvent [timestamp=2019-08-11T14:07:07.379Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: D163720AE41DEF8222EC5DBADEA53122}]
+2019-08-11 19:37:07 - On audit application event: timestamp: 2019-08-11T14:07:07.379Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: D163720AE41DEF8222EC5DBADEA53122}
+2019-08-11 19:49:00 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Null value was assigned to a property [class org.jzen.invoicing.entity.UserDetail.isSuperAdmin] of primitive type setter of org.jzen.invoicing.entity.UserDetail.isSuperAdmin; nested exception is org.hibernate.PropertyAccessException: Null value was assigned to a property [class org.jzen.invoicing.entity.UserDetail.isSuperAdmin] of primitive type setter of org.jzen.invoicing.entity.UserDetail.isSuperAdmin] with root cause
+java.lang.IllegalArgumentException: Can not set boolean field org.jzen.invoicing.entity.UserDetail.isSuperAdmin to null value
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeBooleanFieldAccessorImpl.set(UnsafeBooleanFieldAccessorImpl.java:80)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at org.hibernate.property.access.spi.SetterFieldImpl.set(SetterFieldImpl.java:41)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.setPropertyValues(AbstractEntityTuplizer.java:649)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.setPropertyValues(PojoEntityTuplizer.java:205)
+	at org.hibernate.persister.entity.AbstractEntityPersister.setPropertyValues(AbstractEntityPersister.java:4903)
+	at org.hibernate.engine.internal.TwoPhaseLoad.doInitializeEntity(TwoPhaseLoad.java:190)
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:129)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:1151)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:1010)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340)
+	at org.hibernate.loader.Loader.doList(Loader.java:2689)
+	at org.hibernate.loader.Loader.doList(Loader.java:2672)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:395)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:220)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1508)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1537)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:135)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:74)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:306)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy164.findAll(Unknown Source)
+	at org.jzen.invoicing.serviceImpl.UserServiceImpl.getAllUsers(UserServiceImpl.java:110)
+	at org.jzen.invoicing.serviceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$8bb11e2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jzen.invoicing.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$e199069.getAllUsers(<generated>)
+	at org.jzen.invoicing.controller.UserController.getAllUserList(UserController.java:215)
+	at org.jzen.invoicing.controller.UserController.allPersons(UserController.java:210)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:155)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-08-11 19:54:55 - On audit application event: timestamp: 2019-08-11T14:24:55.854Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 19:54:56 - On audit application event: timestamp: 2019-08-11T14:24:56.389Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: C6F21507C88EE1A85553D7F64E17C43B, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 19:55:03 - authenticationure, user: demo
+2019-08-11 19:55:03 - login success event, user: AuditEvent [timestamp=2019-08-11T14:25:03.121Z, principal=demo, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: C6F21507C88EE1A85553D7F64E17C43B}]
+2019-08-11 19:55:03 - On audit application event: timestamp: 2019-08-11T14:25:03.121Z, principal: demo, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: C6F21507C88EE1A85553D7F64E17C43B}
+2019-08-11 21:13:40 - On audit application event: timestamp: 2019-08-11T15:43:40.053Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:13:41 - On audit application event: timestamp: 2019-08-11T15:43:41.068Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:13:49 - On audit application event: timestamp: 2019-08-11T15:43:49.551Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:15:18 - On audit application event: timestamp: 2019-08-11T15:45:18.466Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:15:37 - On audit application event: timestamp: 2019-08-11T15:45:37.332Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:15:47 - On audit application event: timestamp: 2019-08-11T15:45:47.804Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:15:52 - On audit application event: timestamp: 2019-08-11T15:45:52.227Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:18:43 - On audit application event: timestamp: 2019-08-11T15:48:43.559Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 21:19:02 - authenticationure, user: demo11
+2019-08-11 21:19:02 - login success event, user: AuditEvent [timestamp=2019-08-11T15:49:02.153Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9}]
+2019-08-11 21:19:02 - On audit application event: timestamp: 2019-08-11T15:49:02.153Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: A150F36550DB514E31F50FC0F18640F9}
+2019-08-11 23:50:10 - On audit application event: timestamp: 2019-08-11T18:20:10.017Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 4E263C94233EC34626A3A6F4096DCC9B, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-11 23:50:24 - authenticationure, user: demo11
+2019-08-11 23:50:24 - login success event, user: AuditEvent [timestamp=2019-08-11T18:20:24.239Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 4E263C94233EC34626A3A6F4096DCC9B}]
+2019-08-11 23:50:24 - On audit application event: timestamp: 2019-08-11T18:20:24.239Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 4E263C94233EC34626A3A6F4096DCC9B}

@@ -1,0 +1,427 @@
+2019-08-14 13:09:32,766 [restartedMain] INFO  org.jzen.MainApplication - Starting MainApplication on WPUCQKTSS0LW with PID 165840 (C:\Users\cqktss0\git\Spring-work\Invoicing2\target\classes started by cqktss0 in C:\Users\cqktss0\git\Spring-work\Invoicing2)
+2019-08-14 13:09:32,782 [restartedMain] INFO  org.jzen.MainApplication - The following profiles are active: dev
+2019-08-14 13:09:36,874 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-14 13:09:36,876 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-08-14 13:09:36,886 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Siemens\Teamcenter11.4\Visualization\Products\Mockup\ClearanceDB;C:\Program Files\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5\Doctrine extensions for PHP\;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\npm;C:\Program Files\apache-maven-3.3.9\bin;c:\OracleClient\Product\12.1.0.2\Client_U90;C:\Program Files\Amazon\AWSCLI\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Users\cqktss0\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Python37;C:\Program Files\Python37\Scripts;C:\Users\cqktss0\AppData\Roaming\npm;C:\Users\cqktss0\AppData\Local\atom\bin;C:\Users\cqktss0\AppData\Roaming\Python\Python37\Scripts;;C:\sts-bundle\sts-3.9.7.RELEASE;;.]
+2019-08-14 13:09:37,431 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-08-14 13:09:37,440 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:09:37,440 [restartedMain] DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-08-14 13:09:37,440 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4552 ms
+2019-08-14 13:09:42,895 [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-08-14 13:09:43,083 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-08-14 13:09:43,161 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+2019-08-14 13:09:43,177 [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-08-14 13:09:43,196 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-08-14 13:09:43,524 [restartedMain] DEBUG org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - Cannot resolve template loader path [classpath:/templates/] to [java.io.File]: using SpringTemplateLoader as fallback
+java.io.FileNotFoundException: class path resource [templates/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195)
+	at org.springframework.core.io.AbstractFileResolvingResource.getFile(AbstractFileResolvingResource.java:150)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.getTemplateLoaderForPath(FreeMarkerConfigurationFactory.java:345)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.createConfiguration(FreeMarkerConfigurationFactory.java:297)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.afterPropertiesSet(FreeMarkerConfigurer.java:120)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.jzen.MainApplication.main(MainApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2019-08-14 13:09:43,873 [restartedMain] INFO  org.jzen.MainApplication - Started MainApplication in 11.719 seconds (JVM running for 26.042)
+2019-08-14 13:09:56,538 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 13:09:56,540 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-08-14 13:09:56,541 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2019-08-14 13:09:56,541 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+2019-08-14 13:09:56,555 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-08-14 13:09:56,556 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2019-08-14 13:09:56,596 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T07:39:56.595Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-14 13:09:56,633 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 13:09:56,639 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 13:09:56,693 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 13:09:56,694 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=null, showMessage=false}
+2019-08-14 13:09:56,698 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 13:09:57,439 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:09:57,474 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 13:09:57,474 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 13:09:57,483 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:09:57,483 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:09:57,507 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:09:57,507 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:09:57,675 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 13:09:57,677 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:09:57,680 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:04,485 [http-nio-8090-exec-6] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T07:40:04.485Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 8F3B3B27595E674AF4B588306E4463E2}
+2019-08-14 13:10:04,488 [http-nio-8090-exec-6] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - authenticationure, user: demo11
+2019-08-14 13:10:04,488 [http-nio-8090-exec-6] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - login success event, user: AuditEvent [timestamp=2019-08-14T07:40:04.485Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 8F3B3B27595E674AF4B588306E4463E2}]
+2019-08-14 13:10:04,539 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals2", parameters={}
+2019-08-14 13:10:04,541 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.showCurrentProposalsHomePage(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-14 13:10:04,551 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 13:10:04,551 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, showSearchResults=false, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@41935d5b, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 13:10:04,552 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 13:10:05,248 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,265 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 13:10:05,267 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,282 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,350 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 13:10:05,350 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 13:10:05,351 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 13:10:05,351 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,351 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,352 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,358 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,359 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 13:10:05,361 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,361 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,361 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,372 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,377 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 13:10:05,377 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 13:10:05,377 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 13:10:05,378 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,378 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,379 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,382 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,383 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,384 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:05,485 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 13:10:05,486 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:05,500 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,384 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/searchCurrentProposals?page=1", parameters={masked}
+2019-08-14 13:10:11,388 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.searchCurrentProposals(java.lang.Integer,org.jzen.invoicing.bean.CurrentProposalsBean,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-08-14 13:10:11,493 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 13:10:11,493 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@63c7735a, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors, proposalResultsList=[org.jzen.invoicing.bean.CurrentProposalsResultsBean@1ee315d8, org.jzen.invoicing.bean.CurrentProposalsResultsBean@41ec3a68, org.jzen.invoicing.bean.CurrentProposalsResultsBean@6b23c527], proposalResultsBean=org.jzen.invoicing.bean.CurrentProposalsResultsBean@33a626ba, showSearchResults=true, org.springframework.validation.BindingResult.proposalResultsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 13:10:11,494 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 13:10:11,533 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,537 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 13:10:11,539 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,544 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,701 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 13:10:11,701 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 13:10:11,702 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 13:10:11,702 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 13:10:11,702 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,702 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,703 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,702 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,706 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,707 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,707 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,707 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,715 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 13:10:11,715 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 13:10:11,716 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,715 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 13:10:11,718 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,718 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,720 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,721 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,722 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:11,867 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 13:10:11,868 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 13:10:11,871 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 13:10:21,474 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/assign", parameters={}
+2019-08-14 13:10:21,476 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<?> org.jzen.invoicing.controller.ProposalController.assignAjax(org.jzen.invoicing.controller.AssignRequest)
+2019-08-14 13:10:21,551 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [AssignRequest [bundleID=B003365, name=ganesh]]
+2019-08-14 13:10:21,568 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+2019-08-14 13:10:21,586 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [org.jzen.invoicing.controller.AjaxResponse@77b90db4]
+2019-08-14 13:10:21,596 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:24,658 [http-nio-8090-exec-10] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:12:24.658Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-14 14:42:24,667 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 14:42:24,669 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 14:42:24,674 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:24,675 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=null, showMessage=false}
+2019-08-14 14:42:24,676 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 14:42:24,684 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:24,704 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 14:42:24,704 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:24,707 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:24,707 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:24,711 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:24,713 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:26,034 [http-nio-8090-exec-6] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:12:26.034Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@2cd90: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 91CCB05573A0241C9A1A20FA6DF9E7DF, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-14 14:42:26,042 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 14:42:26,043 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 14:42:26,047 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:26,047 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=null, showMessage=false}
+2019-08-14 14:42:26,047 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 14:42:26,048 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:26,073 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:26,074 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:26,075 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 14:42:26,076 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:26,079 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:26,082 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:26,233 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 14:42:26,234 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:26,237 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,118 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:12:34.118Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@2cd90: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 91CCB05573A0241C9A1A20FA6DF9E7DF}
+2019-08-14 14:42:34,120 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - authenticationure, user: demo11
+2019-08-14 14:42:34,121 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - login success event, user: AuditEvent [timestamp=2019-08-14T09:12:34.118Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@2cd90: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 91CCB05573A0241C9A1A20FA6DF9E7DF}]
+2019-08-14 14:42:34,149 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals2", parameters={}
+2019-08-14 14:42:34,149 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.showCurrentProposalsHomePage(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-14 14:42:34,153 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:34,153 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, showSearchResults=false, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@66d7d7e8, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 14:42:34,153 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 14:42:34,170 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,216 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 14:42:34,217 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,224 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,300 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:34,301 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,302 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 14:42:34,303 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 14:42:34,303 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 14:42:34,303 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,303 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,304 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,305 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,306 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,308 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,308 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,325 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 14:42:34,325 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 14:42:34,325 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:34,326 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,326 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,326 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,329 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,329 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,330 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:34,424 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 14:42:34,425 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:34,428 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:37,115 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals", parameters={}
+2019-08-14 14:42:37,119 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:37,121 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2019-08-14 14:42:37,121 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-08-14 14:42:37,124 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-08-14 14:42:37,125 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2019-08-14 14:42:37,130 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:37,131 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - View name 'error', model {username=Demo11}
+2019-08-14 14:42:37,131 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/error.jsp]
+2019-08-14 14:42:37,298 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-08-14 14:42:37,308 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 14:42:37,308 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:37,313 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:37,369 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 14:42:37,369 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:37,370 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:37,371 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:37,374 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:37,375 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:38,598 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals2", parameters={}
+2019-08-14 14:42:38,600 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.showCurrentProposalsHomePage(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-14 14:42:38,602 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:38,602 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, showSearchResults=false, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@2a12725c, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 14:42:38,604 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 14:42:38,616 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:38,775 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 14:42:38,775 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:38,779 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,540 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/searchCurrentProposals?page=1", parameters={masked}
+2019-08-14 14:42:58,542 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.searchCurrentProposals(java.lang.Integer,org.jzen.invoicing.bean.CurrentProposalsBean,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-08-14 14:42:58,573 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 14:42:58,574 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@1612b984, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors, proposalResultsList=[org.jzen.invoicing.bean.CurrentProposalsResultsBean@477443f2, org.jzen.invoicing.bean.CurrentProposalsResultsBean@1aa9c72b, org.jzen.invoicing.bean.CurrentProposalsResultsBean@34f231d7], proposalResultsBean=org.jzen.invoicing.bean.CurrentProposalsResultsBean@37af6054, showSearchResults=true, org.springframework.validation.BindingResult.proposalResultsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 14:42:58,575 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 14:42:58,591 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,603 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 14:42:58,605 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,610 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,762 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:58,762 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 14:42:58,763 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,762 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 14:42:58,762 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 14:42:58,764 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,764 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,765 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,768 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,768 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,768 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,768 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,778 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 14:42:58,778 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 14:42:58,778 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 14:42:58,779 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,779 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,779 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,783 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,783 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,784 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 14:42:58,933 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 14:42:58,934 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 14:42:58,937 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:31,018 [http-nio-8090-exec-5] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:35:31.018Z, principal: anonymousUser, type: AUTHORIZATION_FAILURE, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}
+2019-08-14 15:05:31,025 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 15:05:31,027 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 15:05:31,030 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:05:31,030 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=null, showMessage=false}
+2019-08-14 15:05:31,037 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 15:05:31,090 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:31,110 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:05:31,111 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:31,111 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 15:05:31,113 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:31,118 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:31,121 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:31,267 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 15:05:31,267 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:31,270 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:35,470 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 15:05:35,472 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 15:05:35,477 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:05:35,477 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=null, showMessage=false}
+2019-08-14 15:05:35,478 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 15:05:35,482 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:35,509 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:05:35,510 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:35,511 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/images/jd.png", parameters={}
+2019-08-14 15:05:35,511 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:35,514 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:35,516 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:43,848 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:35:43.848Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffde5d4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2061FAA6B19D5E727156F76B65164871}
+2019-08-14 15:05:43,850 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - authenticationure, user: demo11
+2019-08-14 15:05:43,852 [http-nio-8090-exec-1] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - login success event, user: AuditEvent [timestamp=2019-08-14T09:35:43.848Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffde5d4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2061FAA6B19D5E727156F76B65164871}]
+2019-08-14 15:05:43,875 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals", parameters={}
+2019-08-14 15:05:43,876 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:43,877 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2019-08-14 15:05:43,878 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-08-14 15:05:43,880 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-08-14 15:05:43,880 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2019-08-14 15:05:43,883 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:05:43,883 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - View name 'error', model {username=Demo11}
+2019-08-14 15:05:43,884 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/error.jsp]
+2019-08-14 15:05:43,887 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-08-14 15:05:43,899 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:05:43,899 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:43,910 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:43,961 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:05:43,961 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:43,962 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:05:43,962 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:43,964 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:43,971 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:53,769 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 15:05:53,771 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 15:05:53,776 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:05:53,776 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=Demo11, showMessage=false}
+2019-08-14 15:05:53,776 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 15:05:53,780 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:57,988 [http-nio-8090-exec-3] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - On audit application event: timestamp: 2019-08-14T09:35:57.988Z, principal: demo11, type: AUTHENTICATION_SUCCESS, data: {details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 04A61154E7FB1167928D5DCFE50F7254}
+2019-08-14 15:05:57,990 [http-nio-8090-exec-3] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - authenticationure, user: demo11
+2019-08-14 15:05:57,992 [http-nio-8090-exec-3] INFO  org.jzen.invoicing.listeners.AuditApplicationEventListener - login success event, user: AuditEvent [timestamp=2019-08-14T09:35:57.988Z, principal=demo11, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 04A61154E7FB1167928D5DCFE50F7254}]
+2019-08-14 15:05:58,008 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentInvoices", parameters={}
+2019-08-14 15:05:58,008 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:58,010 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2019-08-14 15:05:58,011 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2019-08-14 15:05:58,012 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2019-08-14 15:05:58,012 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2019-08-14 15:05:58,016 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:05:58,017 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.JstlView - View name 'error', model {username=Demo11}
+2019-08-14 15:05:58,017 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/error.jsp]
+2019-08-14 15:05:58,019 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2019-08-14 15:05:58,030 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:05:58,031 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:58,035 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:58,104 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:05:58,104 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:05:58,104 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:58,104 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:05:58,107 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:05:58,107 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:03,434 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2019-08-14 15:06:03,436 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.LoginController.showLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-08-14 15:06:03,439 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:06:03,439 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - View name 'login', model {username=Demo11, showMessage=false}
+2019-08-14 15:06:03,441 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/login.jsp]
+2019-08-14 15:06:03,447 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:09,709 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals2", parameters={}
+2019-08-14 15:06:09,711 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.showCurrentProposalsHomePage(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-14 15:06:09,717 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:06:09,718 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, showSearchResults=false, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@3f47e870, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 15:06:09,718 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 15:06:09,868 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:09,898 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:06:09,898 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:09,902 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,238 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/currentProposals2", parameters={}
+2019-08-14 15:06:14,239 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.showCurrentProposalsHomePage(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-14 15:06:14,242 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:06:14,242 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, showSearchResults=false, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@55894353, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 15:06:14,242 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 15:06:14,253 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,273 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:06:14,273 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,278 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,366 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:06:14,366 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:06:14,367 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,367 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,368 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 15:06:14,368 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 15:06:14,369 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,369 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,371 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,373 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,381 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,382 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,388 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:06:14,388 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:06:14,388 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:06:14,388 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,389 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,389 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,391 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,391 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,392 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:14,492 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 15:06:14,493 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:14,502 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:36,887 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/searchCurrentProposals?page=1", parameters={masked}
+2019-08-14 15:06:36,889 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public java.lang.String org.jzen.invoicing.controller.CurrentProposalsController.searchCurrentProposals(java.lang.Integer,org.jzen.invoicing.bean.CurrentProposalsBean,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-08-14 15:06:36,908 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-08-14 15:06:36,908 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - View name 'currentProposals', model {username=Demo11, currentProposalsBean=org.jzen.invoicing.bean.CurrentProposalsBean@7c56520, org.springframework.validation.BindingResult.currentProposalsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors, proposalResultsList=[org.jzen.invoicing.bean.CurrentProposalsResultsBean@591bbff0, org.jzen.invoicing.bean.CurrentProposalsResultsBean@787a3c95, org.jzen.invoicing.bean.CurrentProposalsResultsBean@f3acbdb], proposalResultsBean=org.jzen.invoicing.bean.CurrentProposalsResultsBean@23fa5379, showSearchResults=true, org.springframework.validation.BindingResult.proposalResultsBean=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2019-08-14 15:06:36,909 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/jsp/currentProposals.jsp]
+2019-08-14 15:06:36,923 [http-nio-8090-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:36,934 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:06:36,935 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:36,939 [http-nio-8090-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,092 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:06:37,092 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:06:37,092 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery-ui.css", parameters={}
+2019-08-14 15:06:37,093 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,092 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/jquery.ui.datepicker.css", parameters={}
+2019-08-14 15:06:37,092 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,094 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,094 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,096 [http-nio-8090-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,096 [http-nio-8090-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,097 [http-nio-8090-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,097 [http-nio-8090-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,105 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+2019-08-14 15:06:37,106 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/one_patterns.css", parameters={}
+2019-08-14 15:06:37,106 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/css/fonts.css", parameters={}
+2019-08-14 15:06:37,106 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,106 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,106 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,109 [http-nio-8090-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,110 [http-nio-8090-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,110 [http-nio-8090-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-08-14 15:06:37,261 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/fonts/glyphicons-halflings-regular.woff2", parameters={}
+2019-08-14 15:06:37,262 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-08-14 15:06:37,266 [http-nio-8090-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK

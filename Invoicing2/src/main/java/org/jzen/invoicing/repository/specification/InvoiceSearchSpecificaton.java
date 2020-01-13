@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -15,9 +14,6 @@ import javax.persistence.criteria.Root;
 import org.apache.commons.lang.StringUtils;
 import org.jzen.invoicing.bean.CurrentInvoicesBean;
 import org.jzen.invoicing.entity.Invoice;
-import org.jzen.invoicing.entity.enums.InvoiceStatus;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 

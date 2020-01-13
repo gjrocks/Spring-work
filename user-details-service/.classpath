@@ -7,7 +7,7 @@
   <classpathentry kind="var" path="M2_REPO/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar" sourcepath="M2_REPO/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" sourcepath="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" sourcepath="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/boot/spring-boot-starter-data-jpa/1.5.10.RELEASE/spring-boot-starter-data-jpa-1.5.10.RELEASE.jar"/>
@@ -55,7 +55,7 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.27/tomcat-embed-websocket-8.5.27.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-validator/5.3.6.Final/hibernate-validator-5.3.6.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-validator/5.3.6.Final/hibernate-validator-5.3.6.Final-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar" sourcepath="M2_REPO/com/fasterxml/classmate/1.3.4/classmate-1.3.4-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar"/>
@@ -76,7 +76,7 @@
   <classpathentry kind="var" path="M2_REPO/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar" sourcepath="M2_REPO/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar" sourcepath="M2_REPO/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.196/h2-1.4.196.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.196/h2-1.4.196.jar" sourcepath="M2_REPO/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/cloud/spring-cloud-starter-eureka/1.1.7.RELEASE/spring-cloud-starter-eureka-1.1.7.RELEASE.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/cloud/spring-cloud-starter/1.1.3.RELEASE/spring-cloud-starter-1.1.3.RELEASE.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/cloud/spring-cloud-context/1.1.3.RELEASE/spring-cloud-context-1.1.3.RELEASE.jar"/>
@@ -92,7 +92,7 @@
   <classpathentry kind="var" path="M2_REPO/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/servo/servo-core/0.10.1/servo-core-0.10.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="M2_REPO/com/google/guava/guava/18.0/guava-18.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/archaius/archaius-core/0.7.4/archaius-core-0.7.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar"/>
@@ -111,15 +111,15 @@
   <classpathentry kind="var" path="M2_REPO/com/netflix/governator/governator-api/1.12.10/governator-api-1.12.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/eureka/eureka-core/1.4.12/eureka-core-1.4.12.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.10/jackson-dataformat-cbor-2.8.10.jar" sourcepath="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.10/jackson-dataformat-cbor-2.8.10-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.10/jackson-dataformat-cbor-2.8.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/amazonaws/aws-java-sdk-ec2/1.11.18/aws-java-sdk-ec2-1.11.18.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/amazonaws/aws-java-sdk-autoscaling/1.11.18/aws-java-sdk-autoscaling-1.11.18.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/amazonaws/aws-java-sdk-sts/1.11.18/aws-java-sdk-sts-1.11.18.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/amazonaws/aws-java-sdk-route53/1.11.18/aws-java-sdk-route53-1.11.18.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/governator/governator/1.12.10/governator-1.12.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/netflix/governator/governator-core/1.12.10/governator-core-1.12.10.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar" sourcepath="M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar" sourcepath="M2_REPO/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/cloud/spring-cloud-starter-archaius/1.1.7.RELEASE/spring-cloud-starter-archaius-1.1.7.RELEASE.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/cloud/spring-cloud-starter-ribbon/1.1.7.RELEASE/spring-cloud-starter-ribbon-1.1.7.RELEASE.jar"/>

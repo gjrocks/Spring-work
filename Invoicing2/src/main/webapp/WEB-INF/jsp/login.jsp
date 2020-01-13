@@ -59,12 +59,12 @@
 		<div class="middle">
 
 					<div class="logo-container">
-		<img class="ebulk-icon" src="images/ebullkplus-blue-grey.png" height="100" width="200"  >
+		<img class="ebulk-icon" src="images/jd.png">
 		</div>				
 							
 			<div class="login-container">
 			
-				<h1>eBulk - Invoicing Solution</h1>
+				<h1>FinanceConnect - insight Solution</h1>
 				<form id="Login"  method="post"
 					onsubmit="return validate();">
 
@@ -111,8 +111,8 @@
 
 				
 					<div class="btn-container">
-						<a href="<c:out value="${forgotPasswordUrl}"/>" class="std-color"
-							>Forgotten details</a>
+						<%-- <a href="<c:out value="${forgotPasswordUrl}"/>" class="std-color"
+							>Forgotten details</a> --%>
 
 						<button type="submit" class="btn-submit btn btn-primary" action="${loginUrl}">Log
 							in</button>
@@ -125,7 +125,7 @@
 					 <hr>
               <div class="logos">
                 <div class="capita-logo">
-                  <img src="images/capita-logo.png" height="20px">
+                  <img src="images/jd.png" height="20px">
                 </div>
              
                 <div class="clearfix"></div>

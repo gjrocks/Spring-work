@@ -6,7 +6,7 @@ import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.jzen.invoicing.MainApplication;
+import org.jzen.MainApplication;
 import org.jzen.invoicing.entity.Invoice;
 import org.jzen.invoicing.entity.UserDetail;
 import org.jzen.invoicing.repository.CurrentInvoicesRepository;
@@ -42,7 +42,7 @@ CurrentInvoicesRepository currentInvoicesRepository;
 		//int count= currentInvoicesRepository.countPagedInvoices();
 		//System.out.println(count);
 		//System.out.println(currentInvoicesRepository.getPagedInvoices("od_createdon", "desc", 1, 2));
-		Invoice invoice=currentInvoicesRepository.findOne(3L);
+		Invoice invoice= null; //currentInvoicesRepository.findOne(3L);
 		
 		for(int ii=0;ii<200;ii++) {
 		invoice.setId(null);

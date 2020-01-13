@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+        enabled: true
+        hostname: localhost
+      host: 127.0.0.1
+      port: 8500 
+      config:
+        enabled: true
+ribbon:
+      ConnectTimeout: 30000
+      ReadTimeout: 30000
+      eureka:
+        enabled: false
+      consul:
+        enabled: true
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
+   
+   
+      
+      
+      

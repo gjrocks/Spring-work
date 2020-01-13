@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @PropertySource({ "classpath:mysqldb.properties" })
-@EnableJpaRepositories(basePackages = "org.jzen.invoicing.repository")
+@EnableJpaRepositories(basePackages = "org.jzen")
 public class PersistenceConfig {
 
     @Autowired
@@ -38,7 +38,7 @@ public class PersistenceConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[] { "org.jzen.invoicing.entity" });
+        em.setPackagesToScan(new String[] { "org.jzen" });
 
         final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 			<nav class="navbar  navbar-default"> <!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<a class="navbar-brand"><div class="font-bold">eBulk</div></a>
+				<a class="navbar-brand"><div class="font-bold">in-FinanceConnect</div></a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#headernavbar"
 					aria-expanded="false">
@@ -54,15 +54,13 @@ $(document).ready(function () {
 			</div>
 			<div class="collapse navbar-collapse" id="headernavbar">
 				<ul class="nav navbar-nav ">
-					<li  ><a href="${pageContext.request.contextPath}/currentInvoices"><div class="font-medium ">
-								Current Invoices
+					<li  ><a href="${pageContext.request.contextPath}/currentProposals"><div class="font-medium ">
+								Proposals
 							</div> </a></li>
 					<li><a href="#"><div
-								class="font-medium">Historic Invoices</div></a></li>
-					<li><a href="#"><div class="font-medium ">Create
-								Invoices</div></a></li>
-					<li><a href="#"><div class="font-medium ">Next
-								Invoice Run</div></a></li>
+								class="font-medium">Customers</div></a></li>
+					<li><a href="#"><div class="font-medium ">Proposal Status</div></a></li>
+					<li><a href="#"><div class="font-medium ">Customer Update</div></a></li>
 					<li><a href="#"><div class="font-medium">Client
 								Management</div></a></li>
 					<li>

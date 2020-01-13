@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.jzen.MainApplication;
 import org.jzen.invoicing.entity.UserDetail;
 import org.jzen.invoicing.repository.CurrentInvoicesRepository;
 import org.jzen.invoicing.repository.UserRepository;
@@ -65,7 +66,7 @@ CurrentInvoicesRepository currentInvoicesRepository;
 		userDetail.setCreatedDate(new Date());
 		userDetail.setEmail("dem11o@ganesh.com");
 		userDetail.setEnabled(true);
-		//userRepository.save(userDetail);
+		userRepository.save(userDetail);
 		System.out.println(passwordEncoder.encode("12345"));
 		System.out.println(passwordEncoder.encode("12345"));
 	}

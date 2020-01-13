@@ -14,7 +14,7 @@ import com.gj.model.User;
 import com.gj.repository.UserRepository;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 
 public class DemoApplication {
 	

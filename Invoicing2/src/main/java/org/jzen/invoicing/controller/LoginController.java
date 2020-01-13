@@ -23,6 +23,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class LoginController {
@@ -79,9 +80,9 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String welcomePage() {
+	public ModelAndView welcomePage() {
 		logger.debug("dashboad page");
-		return "dashboard";
+		return new ModelAndView("currentInvoices2");
 	}
 	@RequestMapping(value = "logout", method = RequestMethod.GET)
 	public String logoutPage() {

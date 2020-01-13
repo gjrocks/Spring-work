@@ -55,7 +55,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import freemarker.template.Configuration;
 
-@Controller
+//@Controller
 // @RequestMapping(value="invoice")
 public class CurrentInvociesController {
 
@@ -72,6 +72,7 @@ public class CurrentInvociesController {
 	private static final String SHOW_SEARCH_RESULTS = "showSearchResults";
 	private static final String CURRENT_INVOICES_BEAN = "currentInvoicesBean";
 	private static final String CURRENT_INVOICES = "currentInvoices";
+	private static final String CURRENT_INVOICES2 = "currentInvoices2";
 	private static final String MESSAGE = "message";
 	private static final String SHOW_ERROR = "showError";
 
@@ -80,10 +81,10 @@ public class CurrentInvociesController {
 	DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
 
-	@RequestMapping(value = CURRENT_INVOICES, method = RequestMethod.GET)
+	@RequestMapping(value = CURRENT_INVOICES2, method = RequestMethod.GET)
 	public String showCurrentInvoicesHomePage(Model model, HttpServletRequest request, HttpServletResponse response) {
 		logger.debug("inside showCurrentInvoicesHomePage page");
-
+		
 		model.addAttribute(SHOW_SEARCH_RESULTS, false);
 		CurrentInvoicesBean currentInvoicesBean = new CurrentInvoicesBean();
 		model.addAttribute(CURRENT_INVOICES_BEAN, setCurrentInvoicesBeanDefaultValues(currentInvoicesBean));

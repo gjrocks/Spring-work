@@ -15,10 +15,11 @@ import org.jzen.invoicing.repository.InvoiceRunRepository;
 import org.jzen.invoicing.repository.UserRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnit44Runner;
+import org.mockito.junit.MockitoJUnitRunner;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@RunWith(MockitoJUnit44Runner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class InvoiceRunServiceImplTest {
 	
 	@Mock

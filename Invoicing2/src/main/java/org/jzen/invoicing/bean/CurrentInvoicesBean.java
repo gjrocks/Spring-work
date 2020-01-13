@@ -1,6 +1,5 @@
 package org.jzen.invoicing.bean;
 
-import java.util.List;
 import java.util.Map;
 
 import org.jzen.invoicing.validator.CheckInvoiceNumRangeConstraint;

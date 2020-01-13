@@ -2,7 +2,7 @@ package org.jzen.invoicing.service;
 
 import java.util.List;
 
-
+import org.jzen.invoicing.bean.UserBean;
 import org.jzen.invoicing.entity.UserDetail;
 
 public interface UserService {
@@ -25,6 +25,6 @@ public interface UserService {
 
 	boolean checkIfEmailExists(String email);
 
-	
+	List<UserBean> getAllUserList();
 
 }

@@ -1,12 +1,16 @@
 package org.jzen.invoicing.serviceImpl;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import org.jzen.invoicing.bean.UserBean;
 import org.jzen.invoicing.entity.UserDetail;
-
+import org.jzen.invoicing.entity.enums.UserStatusType;
 import org.jzen.invoicing.repository.UserRepository;
 
 import org.jzen.invoicing.service.UserService;
@@ -28,6 +32,8 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
+	
+	DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 	@Override
 	public UserDetail getUserByEmail(String emailId) {
 		return userRepository.findByEmail(emailId);
@@ -128,5 +134,20 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	
+	public List<UserBean> getAllUserList() {
+		List<UserDetail> users = this.getAllUsers();
+		List<UserBean> beanList = new ArrayList<UserBean>();
+		for (UserDetail user : users) {
+			UserBean userBean = new UserBean();
+			userBean.setUname(user.getUsername());
+			userBean.setDobDisplay(dateFormat.format(user.getDob()));
+			userBean.setDisplayStatus(UserStatusType.getUserStatus(user.getUserStatus()));
+			userBean.setEmail(user.getEmail());
+			userBean.setCreatedDate(dateFormat.format(user.getCreatedDate()));
+			beanList.add(userBean);
 
+		}
+
+		return beanList;
+	}
 }

@@ -2,12 +2,7 @@ package org.jzen.invoicing.repository;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.CriteriaBuilder;
-
 import org.jzen.invoicing.entity.Invoice;
-import org.jzen.invoicing.entity.UserDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
